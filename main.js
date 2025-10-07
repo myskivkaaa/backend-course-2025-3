@@ -38,3 +38,6 @@ let result = data
 // --- Вивід результату ---
 if (options.display) console.log(result);
 if (options.output) fs.writeFileSync(options.output, result, 'utf-8');
+
+// Minor update for lab 3
+console.log("Lab 3 JSON processing program");
