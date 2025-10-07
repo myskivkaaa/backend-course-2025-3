@@ -1,7 +1,8 @@
 // main.js
 
-const fs = require('fs');
-const { program } = require('commander');
+// --- Імпорти ---
+const fs = require('fs'); // вбудований модуль для роботи з файлами
+const { program } = require('commander'); // бібліотека для обробки аргум. ком. рядка
 
 // --- Налаштування параметрів командного рядка ---
 program
@@ -11,7 +12,8 @@ program
   .option('-m, --mfo', 'Show MFO code before bank name')
   .option('-n, --normal', 'Show only active banks');
 
-program.parse(process.argv);
+  //бере аргументи з командного рядка і перетворює в зручний об'єкт
+program.parse(process.argv); 
 const options = program.opts();
 
 // --- Перевірка обовʼязкового параметра ---
